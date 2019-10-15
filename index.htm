@@ -1,0 +1,357 @@
+<style>
+@font-face{
+	font-family:'Transport';
+	src:url('transport.ttf');
+}
+@font-face{
+	font-family:'Transport 2';
+	src:url('transport-2.ttf');
+}
+.sign {
+	border:1px solid #000;
+	display:inline-block;
+	border-radius:6px;
+	font-family:Transport;
+	text-align:center;
+	padding:3px;
+	padding-top:0px;
+	margin:5px;
+	font-size:14px;
+	background-color:#FFF;
+	box-shadow:1px 2px 2px rgba(0,0,0,0.2);
+	position:relative;
+}
+.sign .sign-section {
+	padding:5px;
+	border-radius:5px;
+	margin-top:3px;
+}
+.sign .sign-section.directional {
+	text-align:left;
+}
+.sign .symbol {
+	background-image:url(signs.png);
+	background-repeat:no-repeat;
+	display:inline-block;
+	width:45px;
+	height:45px;
+}
+.sign .symbol.none {
+	background-position:50px;
+	line-height:45px;
+	font-size:20px;
+}
+.sign .symbol.motorway {
+	background-position:0px 0px;
+	width:54px;
+}
+.sign .symbol.airport {
+	background-position:-54px 0px;
+}
+.sign .symbol.castle {
+	background-position:0px -45px;
+}
+.sign .symbol.zoo {
+	background-position:0px -90px;
+	width:49px;
+}
+.sign .symbol.bed {
+	background-position:0px -135px;
+	width:72px;
+}
+.sign .symbol.info {
+	background-position:0px -180px;
+}
+.sign .symbol.house {
+	background-position:0px -225px;
+}
+.sign .symbol.historic {
+	background-position:0px -270px;
+}
+.sign .symbol.parking {
+	background-position:9px -315px;
+}
+.sign .symbol.bus {
+	background-position:0px -356px;
+	width:115px;
+}
+.sign .title {
+	text-transform:uppercase;
+}
+.sign .distances {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.sign .distances li {
+	display:block;
+	text-align:left;
+}
+.sign .distances .dist {
+	float:right;
+	margin-left:30px;
+}
+.sign .sign-section.icon-left, .sign .subsign.icon-left {
+	padding-left:60px;
+	min-height:45px;
+}
+.sign .sign-section.icon-right, .sign .subsign.icon-right {
+	padding-right:60px;
+	min-height:45px;
+}
+.sign .symbol.icon-right {
+	margin-right:-57px;
+	float:right;
+}
+.sign .symbol.icon-left {
+	margin-left:-57px;
+	float:left;
+}
+.sign .road-name {
+	font-family:"Transport 2";
+}
+.sign.motorway {
+	border-color:#037ac2;
+}
+.sign.motorway .sign-section {
+	background-color:#037ac2;
+	color:#FFF;
+}
+.sign.motorway .road-name {
+	font-size:18px;
+}
+.sign.primary {
+	border-color:#01693f;
+}
+.sign.primary .sign-section {
+	background-color:#01693f;
+	color:#FFF;
+}
+.sign.primary .road-name {
+	color:#fee54b;
+	font-size:13px;
+}
+.sign.local {
+	border:0px;
+	background-color:#000;
+}
+.sign.local .sign-section {
+	background-color:#FFF;
+}
+.sign.attraction {
+	border-color:#7d4814;
+}
+.sign.attraction .sign-section {
+	background-color:#7d4814;
+	color:#FFF;
+}
+.sign .subsign {
+	border:1px solid #FFF;
+	border-radius:3px;
+	display:inline-block;
+	padding:1px;
+}
+.sign div.subsign {
+	padding:3px;
+}
+
+.sign .subsign.motorway {
+	color:#FFF;
+	background-color:#037ac2;
+}
+.sign .subsign.attraction {
+	color:#FFF;
+	background-color:#7d4814;
+}
+.sign .subsign.primary {
+	color:#FFF;
+	background-color:#01693f;
+}
+.sign .subsign.local {
+	color:#000;
+	background-color:#FFF;
+}
+.sign .subsign.local .road-name {
+	color:#000;
+}
+.sign .road-name .subsign.primary {
+	color:#fee54b;
+}
+.sign .subsign.junction {
+	color:#FFF;
+	background-color:#000;
+	font-size:12px;
+}
+.sign .right-symbol {
+	float:right;
+	font-size:24px;
+	margin-left:3px;
+}
+</style>
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="road-name">M6</div>
+		<div class="text">The NORTH</div>
+		<ul class="distances">
+			<li>Preston<div class="dist">1&frac12;</div></li>
+			<li>Blackpool<div class="dist">15</div></li>
+		</ul>
+	</div>
+</div>
+<div class="sign motorway">
+	<div class="sign-section directional icon-left">
+		<span class="symbol motorway icon-left"></span>
+		<div class="text">Shrewsbury</div>
+		<div class="road-name"><span class="subsign junction">21</span> M1</div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">Tiredness can kill<br />Take a break</div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text"><span class="road-name">A 404 </span>Marlow</div>
+		<div class="text">&dollar;</div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">The NORTH WEST, Preston, Lancaster <span class="road-name">M6</span> &sect;</div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text"># M'chester, <span class="symbol airport"></span> <span class="road-name">M6</span></div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">+ B'ham <span class="road-name">M6</span></div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">&lt; Leeds <span class="road-name">M4</span></div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">Preston (North) <span class="road-name">M6</span> &gt;</div>
+	</div>
+</div>
+
+<div class="sign motorway">
+	<div class="sign-section">
+		<div class="text">+ Plymouth <span class="road-name">M5</span></div>
+	</div>
+</div>
+
+<div class="sign primary">
+	<div class="sign-section">
+		<div class="road-name">A 46</div>
+		<div class="text">The SOUTH</div>
+		<ul class="distances">
+			<li>Nottingham<div class="dist">17</div></li>
+			<li>Leicester<div class="dist">32</div></li>
+			<li><span class="subsign motorway">(M1 South)</span><div class="dist">35</div></li>
+		</ul>
+	</div>
+	<div class="sign-section">
+		<div class="subsign attraction">Steam railway</div>
+	</div>
+</div>
+
+<div class="sign primary">
+	<div class="sign-section">
+		<div class="title">Edgebold<br />Crossroads</div>
+	</div>
+	<div class="sign-section icon-left">
+		<span class="icon-left symbol none">&sect;</span>
+		<ul class="distances">
+			<li>Westbury<div class="dist"><span class="road-name">A 11</span></div></li>
+			<li>Brockton<div class="dist"><span class="subsign motorway">(M 11)</span></div></li>
+		</ul>
+	</div>
+	<div class="sign-section">
+		&lt;
+		<div class="subsign local">Wem <span class="road-name">A 1786</span></div>
+	</div>
+	<div class="sign-section">
+		<div class="subsign local">Aston <span class="road-name">A 1885</span></div>
+		&gt;
+	</div>
+</div>
+
+<div class="sign primary">
+	<div class="sign-section">
+		<div class="text">&lt; <span class="subsign local">Maplebeck</span></div>
+	</div>
+</div>
+
+<div class="sign local">
+	<div class="sign-section">
+		<div class="text">&lt; Milport <span class="road-name"><span class="subsign primary">(A112)</span></span></div>
+	</div>
+</div>
+
+<div class="sign local">
+	<div class="sign-section">
+		<div class="text">Bere Alston</div>
+	</div>
+	<div class="sign-section">
+		<ul class="distances">
+			<li>Milton Combe</li>
+			<li>Lopwell</li>
+			<li>Maristow</li>
+			<li><div class="subsign attraction icon-left"><span class="symbol zoo icon-left"></span>Nature<br />reserve</div></li>
+		</ul>
+	</div>
+</div>
+
+<div class="sign local">
+	<div class="sign-section">
+		<div class="title">Spaghetti<br />Junction</div>
+	</div>
+	<div class="sign-section">
+		<ul class="distances">
+			<li>Nottingham<div class="dist">17</div></li>
+			<li>Leicester<div class="dist">32</div></li>
+			<li><span class="subsign motorway">(M1 South)</span><div class="dist">35</div></li>
+		</ul>
+		<div class="road-name">A404<span class="subsign primary">(A41)</span></div>
+	</div>
+</div>
+
+<div class="sign attraction">
+	<div class="sign-section directional icon-left icon-right">
+		<span class="symbol none icon-left">&lt;</span>
+		<span class="symbol house icon-right"></span>
+		<div class="text">Buckland<br />Abbey</div>
+	</div>
+</div>
+
+<div class="sign attraction">
+	<div class="sign-section">
+		<div class="text">Buckland Abbey</div>
+		<div class="text"><span class="symbol castle"></span> <span class="symbol zoo"></span> <span class="symbol house"></span> <span class="symbol historic"></span></div>
+		<div class="subsign motorway"><span class="symbol parking"></span></div>
+	</div>
+</div>
+
+<div class="sign attraction">
+	<div class="sign-section">
+		<div class="text">Winford Cross &gt;</div>
+		<div class="text"><span class="symbol info"></span> <span class="symbol bed"></span> <span class="symbol castle"></span> <span class="symbol house"></span></div>
+		<div class="text">Hotel and B &amp; B</div>
+		<div class="subsign motorway"><span class="symbol parking"></span> <span class="symbol bus"></span></div>
+	</div>
+</div>
